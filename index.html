@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="ie-stand">
+		<title>期末作业-电商首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<div id="top" class="top">
+			<div class="container clearfix">
+				<div class="left">
+					<a href="index.html">小米商城</a>
+					<span>|</span>
+					<a href="#">MIUI</a>
+					<span>|</span>
+					<a href="#" class="contact">
+						联系我
+						<div class="triangle"></div>
+						<div class="QRcode">
+							<img src="images/QRcode.png" width="90" height="90">
+							微信扫一扫
+						</div>
+					</a>
+				</div>
+				<div class="shopcar">
+					<a href="#">购物车 (0)</a>
+					<div class="shopcar-menu">
+						<div class="shopcar-menu-content">购物车中还没有商品，赶紧选购吧！</div>
+					</div>
+				</div>
+				<div class="user">
+					<label for="signin-btn" class="signin-btn-label">登录</label>
+					<input type="radio" class="signin-btn" id="signin-btn" name="signin" />
+					<div class="fake-signin-back clearfix">
+						<input type="radio" class="cancel-signin-btn" id="cancel-signin-btn" name="signin" />
+						<div class="signin-back">
+							<div class="signin-panel clearfix">
+								<div class="title-banner">
+									<div class="title">登录</div>
+									<label for="cancel-signin-btn" class="cancel-signin-btn-label"></label>
+								</div>
+								<div class="signin-form clearfix">
+									<input type="text" class="username" placeholder="用户名" />
+									<input type="password" class="first-password" placeholder="密码" />
+									<input type="text" class="pinword" placeholder="验证码" />
+									<div class="get-pinword">
+										<a href="#" class="get-pinword-btn">
+											获取验证码
+										</a>
+									</div>
+								</div>
+								<div class="signin-submit clearfix">
+									<a href="#" class="signin-submit-btn">
+										立即登录
+									</a>
+								</div>
+								<div class="signin-othertool clearfix">
+									<div class="rememberme clearfix">
+										<input type="checkbox" name="remember" id="remember" class="rememberme-box" />
+										<label for="remember" class="rememberme-btn">记住我的账号</label>
+									</div>
+									<div class="forgetpassword">
+										<a href="#" class="forgetpassword-btn">忘记密码？</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="user-span">|</span>
+					<label for="login-btn" class="login-btn-label">注册</label>
+					<input type="radio" class="login-btn" id="login-btn" name="login" />
+					<div class="fake-login-back clearfix">
+						<input type="radio" class="cancel-login-btn" id="cancel-login-btn" name="login" />
+						<div class="login-back">
+							<div class="login-panel">
+								<div class="title-banner">
+									<div class="title">注册</div>
+									<label for="cancel-login-btn" class="cancel-login-btn-label"></label>
+								</div>
+								<div class="login-form clearfix">
+									<input type="text" class="username" placeholder="邮箱/手机号码" />
+									<input type="password" class="first-password" placeholder="密码" />
+									<input type="password" class="second-password" placeholder="再次确认密码" />
+									<input type="text" class="pinword" placeholder="验证码" />
+									<div class="get-pinword">
+										<a href="#" class="get-pinword-btn">
+											获取验证码
+										</a>
+									</div>
+								</div>
+								<div class="login-submit">
+									<a href="#" class="login-submit-btn">
+										立即注册
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="next">
+			<div class="container clearfix">
+				<div class="logo">
+					<a href="index.html" class="logo-mi"></a>
+					<a href="index.html" class="logo-home"></a>
+				</div>
+				<div class="nav">
+					<ul class="nav-list clearfix">
+						<li class="nav-item">
+							<a href="#" class="nav-item-title">
+								全部商品分类
+								<div class="title-border"></div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item-title">
+								小米手机
+								<div class="title-border"></div>
+							</a>
+							<div class="nav-item-menu">
+								<ul class="item-list clearfix">
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/mi-cc9-pro.webp" width="160" height="110">
+											</div>
+											<div class="item-title">小米CC9 Pro</div>
+											<p class="item-price">2599元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/mi9-pro-5g.webp" width="160" height="110">
+											</div>
+											<div class="item-title">小米9 Pro 5G</div>
+											<p class="item-price">3699元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/mi-cc9.webp" width="160" height="110">
+											</div>
+											<div class="item-title">小米CC9</div>
+											<p class="item-price">1699元</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/mi-cc9e.png" width="160" height="110">
+											</div>
+											<div class="item-title">小米CC9e</div>
+											<p class="item-price">1099元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/mi-cc9-meitu.png" width="160" height="110">
+											</div>
+											<div class="item-title">小米CC9 美图定制版</div>
+											<p class="item-price">1999元</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/mi-mix3.png" width="160" height="110">
+											</div>
+											<div class="item-title">小米MIX 3</div>
+											<p class="item-price">2599元</p>
+										</a>
+									</li>
+								</ul>
+								<div class="border"></div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item-title">
+								Redmi 红米
+								<div class="title-border"></div>
+							</a>
+							<div class="nav-item-menu">
+								<ul class="item-list clearfix">
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/redmi-k30.webp" width="160" height="110">
+											</div>
+											<div class="item-title">Redmi K30</div>
+											<p class="item-price">1599元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/redmi-k30-5g.webp" width="160" height="110">
+											</div>
+											<div class="item-title">Redmi K30 5G</div>
+											<p class="item-price">1999元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/redmi-8a.webp" width="160" height="110">
+											</div>
+											<div class="item-title">Redmi 8A</div>
+											<p class="item-price">699元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/redmi-note8.webp" width="160" height="110">
+											</div>
+											<div class="item-title">Redmi Note 8</div>
+											<p class="item-price">999元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/redmi-k20pro-prime.webp" width="160" height="110">
+											</div>
+											<div class="item-title">Redmi K20 Pro 尊享版</div>
+											<p class="item-price">2399元起</p>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#" class="item-obj">
+											<div class="item-img">
+												<img src="images/redmi-note8-pro.webp" width="160" height="110">
+											</div>
+											<div class="item-title">Redmi Note 8 Pro</div>
+											<p class="item-price">1199元起</p>
+										</a>
+									</li>
+								</ul>
+								<div class="border"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search">
+					<form class="search-form clearfix">
+						<input type="text" autocomplete="off" class="search-text" />
+						<div class="search-btn">
+							<a href="#" class="search-btn-img"></a>
+							<div class="block-keyword-list">
+								<ul class="keyword-list">
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											小米9
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											Redmi K20 Pro
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											Redmi K20
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											Redmi Note 7 Pro
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											Redmi Note 7
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											小米电视4C
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											电视32英寸
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											笔记本Pro
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											小爱音箱
+										</a>
+									</li>
+									<li class="keyword-item">
+										<a href="#" class="keyword-btn">
+											净水器
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="video">
+			<video src="video/MIX-ALPHA.mp4" type="video/mp4" width="1226" autoplay="autoplay" muted="muted"></video>
+			<audio src="audio/are-you-ok.mp3" type="audio/mp3" autoplay="autoplay" loop="loop" muted="muted"></audio>
+		</div>
+		<div class="main-banner">
+			<div class="container">
+				<ul class="main-banner-list clearfix">
+					<li class="main-banner-item">
+						<a href="#" class="main-banner-btn">
+							<img src="images/main-banner-1.jpg">
+						</a>
+					</li>
+					<li class="main-banner-item">
+						<a href="#" class="main-banner-btn">
+							<img src="images/main-banner-2.jpg">
+						</a>
+					</li>
+					<li class="main-banner-item">
+						<a href="#" class="main-banner-btn">
+							<img src="images/main-banner-3.jpg">
+						</a>
+					</li>
+					<li class="main-banner-item">
+						<a href="#" class="main-banner-btn">
+							<img src="images/main-banner-4.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mainpage">
+			<div class="container clearfix">
+				<div class="phone">
+					<div class="titleline clearfix">
+						<div class="title-name">
+							手机
+						</div>
+						<div class="viewall">
+							<a href="#" class="clearfix">
+								<div class="viewall-img"></div>
+								<div class="viewall-text">查看全部</div>
+							</a>
+						</div>
+					</div>
+					<div class="content clearfix">
+						<div class="left-img">
+							<a href="#">
+								<img src="images/mainpage/mainpage-phone-left.webp">
+							</a>
+						</div>
+						<div class="main-img clearfix">
+							<ul class="img-list">
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-1.webp">
+										</div>
+										<div class="title">Redmi K30</div>
+										<div class="description">120Hz流速屏，全速热爱</div>
+										<div class="price">1599元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-2.webp">
+										</div>
+										<div class="title">Redmi K30 5G</div>
+										<div class="description">双模5G，120Hz流速屏</div>
+										<div class="price">1999元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-3.webp">
+										</div>
+										<div class="title">小米CC9 Pro</div>
+										<div class="description">1亿像素 五摄四闪</div>
+										<div class="price">2599元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-4.webp">
+										</div>
+										<div class="title">小米9 Pro 5G</div>
+										<div class="description">5G双卡全网通，骁龙855Plus</div>
+										<div class="price">3699元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-5.webp">
+										</div>
+										<div class="title">Redmi 8</div>
+										<div class="description">5000mAh超长续航</div>
+										<div class="price">699元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-6.webp">
+										</div>
+										<div class="title">Redmi 8A</div>
+										<div class="description">5000mAh超长续航</div>
+										<div class="price">699元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-7.webp">
+										</div>
+										<div class="title">Redmi Note 8 Pro</div>
+										<div class="description">6400万全场景四摄</div>
+										<div class="price">1199元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-phone-8.webp">
+										</div>
+										<div class="title">Redmi Note 8</div>
+										<div class="description">千元4800万四摄</div>
+										<div class="price">999元起</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bottombanner">
+						<a href="#">
+							<img src="images/mainpage/phone-banner.webp">
+						</a>
+					</div>
+				</div>
+				<div class="electronic">
+					<div class="titleline clearfix">
+						<div class="title-name">
+							家电
+						</div>
+						<div class="viewall">
+							<a href="#" class="clearfix">
+								<div class="viewall-img"></div>
+								<div class="viewall-text">查看全部</div>
+							</a>
+						</div>
+					</div>
+					<div class="content clearfix">
+						<div class="main-img clearfix">
+							<ul class="img-list">
+								<li class="img-item-left">
+									<a href="#">
+										<img src="images/mainpage/mainpage-electronic-left-1.webp">
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-electronic-1.webp">
+										</div>
+										<div class="title">米家互联网空调C1（一级能效）</div>
+										<div class="description">变频节能省电，自清洁</div>
+										<div class="price">2599元</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-electronic-2.jpg">
+										</div>
+										<div class="title">米家空调</div>
+										<div class="description">出众静音，快速制冷热</div>
+										<div class="price">1699元起</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="./images/mainpage/mainpage-electronic-3.webp">
+										</div>
+										<div class="title">米家互联网洗烘一体机 Pro 10kg</div>
+										<div class="description">智能洗烘，省心省力</div>
+										<div class="price">2999元</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-electronic-4.jpg">
+										</div>
+										<div class="title">小米电视4A 32英寸</div>
+										<div class="description">人工智能系统，高清液晶屏</div>
+										<div class="price">799元</div>
+									</a>
+								</li>
+								<li class="img-item-left">
+									<a href="#">
+										<img src="images/mainpage/mainpage-electronic-left-2.webp">
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-electronic-5.webp">
+										</div>
+										<div class="title">Redmi全自动波轮洗衣机1A 8kg</div>
+										<div class="description">一键操作，父母都爱用</div>
+										<div class="price">799元</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-electronic-6.webp">
+										</div>
+										<div class="title">小米全面屏E55A</div>
+										<div class="description">全面屏设计，人工智能语音</div>
+										<div class="price">2099元</div>
+									</a>
+								</li>
+								<li class="img-item">
+									<a href="#">
+										<div class="img">
+											<img src="images/mainpage/mainpage-electronic-7.webp">
+										</div>
+										<div class="title">15.6" 四核i7 16G 独显 512G</div>
+										<div class="description">全面均衡的国民轻薄本</div>
+										<div class="price">4699元</div>
+									</a>
+								</li>
+								<li class="img-item-last">
+									<div class="first">
+										<a href="#">
+											<div class="img">
+											</div>
+											<div class="title">
+												Air 13.3" 2019款
+											</div>
+											<div class="price">4999元起</div>
+										</a>
+									</div>
+									<div class="second">
+										<a href="#">
+											<div class="img">
+											</div>
+											<div class="title">
+												小米盒子4
+											</div>
+											<div class="price">299元</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bottombanner">
+						<a href="#">
+							<img src="images/mainpage/electronic-banner.webp">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="backtoptop">
+			<a href="#top" class="backtoptop-btn">
+				<div class="backtotop-text">
+					回到顶部
+				</div>
+			</a>
+		</div>
+	</body>
+</html>
