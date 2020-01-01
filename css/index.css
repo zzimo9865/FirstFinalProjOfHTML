@@ -180,10 +180,10 @@ a {
 	visibility: hidden;
 	position: fixed;
 	left: 0;
+	right: 0;
 	top: 0;
-	transform: translate(-50%, -50%);
-	width: 100vw;
-	height: 100vh;
+	width: 10000px;
+	height: 10000px;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0.5);
 	z-index: 300;
@@ -380,10 +380,10 @@ a {
 	visibility: hidden;
 	position: fixed;
 	left: 0;
+	right: 0;
 	top: 0;
-	transform: translate(-50%, -50%);
-	width: 100vw;
-	height: 100vh;
+	width: 10000px;
+	height: 10000px;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0);
 	z-index: 200;
@@ -496,7 +496,7 @@ a {
 }
 
 .top .user .signin-btn:checked+.fake-signin-back .signin-back {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	visibility: visible;
 	transition: background-color 0.3s;
 }
@@ -544,7 +544,7 @@ a {
 }
 
 .top .user .login-btn:checked+.fake-login-back .login-back {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.5);
 	visibility: visible;
 	transition: background-color 0.3s;
 }
