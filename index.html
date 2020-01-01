@@ -43,12 +43,8 @@
 								<div class="signin-form clearfix">
 									<input type="text" class="username" placeholder="用户名" />
 									<input type="password" class="first-password" placeholder="密码" />
-									<input type="text" class="pinword" placeholder="验证码" />
-									<div class="get-pinword">
-										<a href="javascript:;" class="get-pinword-btn">
-											获取验证码
-										</a>
-									</div>
+									<input type="range" class="pinrange" value="0" />
+									<div class="hint-before">滑动以验证</div>
 								</div>
 								<div class="signin-submit clearfix">
 									<a href="javascript:;" class="signin-submit-btn">
@@ -108,11 +104,69 @@
 				</div>
 				<div class="nav">
 					<ul class="nav-list clearfix">
-						<li class="nav-item">
+						<li class="nav-item  all-commodity-btn">
 							<a href="javascript:;" class="nav-item-title">
 								全部商品分类
 								<div class="title-border"></div>
 							</a>
+							<div class="all-commodity">
+								<ul class="commodity-list">
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											手机 电话卡
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											电视 盒子
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											笔记本 显示器 平板
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											家电 插线板
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											出行 穿戴
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											智能 路由器
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											电源 配件
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											健康 儿童
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+									<li class="commodity-item">
+										<a href="javascript:;" class="commodity-item-title">
+											耳机 音箱
+											<span class="right-angle">&gt;</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li class="nav-item">
 							<a href="javascript:;" class="nav-item-title">
@@ -577,6 +631,127 @@
 						</a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<!-- 		<div class="friends">
+			<div class="title">友商链接</div>
+			<div class="container clearfix">
+				<ul class="friends-list clearfix">
+					<li class="friends-item">
+						<a href="javascript:;" class="friends-item-btn meizu">
+							<div class="background-hover"></div>
+						</a>
+					</li>
+					<li class="friends-item">
+						<a href="javascript:;" class="friends-item-btn oppo">
+							<div class="background-hover"></div>
+						</a>
+					</li>
+					<li class="friends-item">
+						<a href="javascript:;" class="friends-item-btn vivo">
+							<div class="background-hover"></div>
+						</a>
+					</li>
+					<li class="friends-item">
+						<a href="javascript:;" class="friends-item-btn samsung">
+							<div class="background-hover"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+		<div class="foot-links">
+			<div class="container clearfix">
+				<dl class="links-list">
+					<dt class="links-title">帮助中心</dt>
+					<dd>
+						<a href="javascript:;">账户管理</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">购物指南</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">订单操作</a>
+					</dd>
+				</dl>
+				<dl class="links-list">
+					<dt class="links-title">服务支持</dt>
+					<dd>
+						<a href="javascript:;">售后政策</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">自助服务</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">相关下载</a>
+					</dd>
+				</dl>
+				<dl class="links-list">
+					<dt class="links-title">线下门店</dt>
+					<dd>
+						<a href="javascript:;">小米之家</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">服务网点</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">授权体验店</a>
+					</dd>
+				</dl>
+				<dl class="links-list">
+					<dt class="links-title">关于小米</dt>
+					<dd>
+						<a href="javascript:;">了解小米</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">加入小米</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">投资者关系</a>
+					</dd>
+				</dl>
+				<dl class="links-list">
+					<dt class="links-title">关注我们</dt>
+					<dd>
+						<a href="javascript:;">新浪微博</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">官方微信</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">联系我们</a>
+					</dd>
+				</dl>
+				<dl class="links-list">
+					<dt class="links-title">特色服务</dt>
+					<dd>
+						<a href="javascript:;">F 码通道</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">礼物码</a>
+					</dd>
+					<dd>
+						<a href="javascript:;">防伪查询</a>
+					</dd>
+				</dl>
+				<div class="foot-helper">
+					<div class="tel-number">186-4968-9865</div>
+					<div class="helper-description">周一至周日 0:00-24:00<br>（仅收一百元）</div>
+					<a href="javascript:;" class="helper-btn">
+						<div class="helper-img">
+						</div>
+						<div class="helper-text">
+							人工客服
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<a href="#top" class="copyright-text">
+					Copyright © 2019 张子漠，All rights reserved.
+				</a>
 			</div>
 		</div>
 		<div class="backtoptop">

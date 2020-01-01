@@ -7,7 +7,6 @@
 body {
 	min-width: 1226px;
 	font: 14px/1.5 Arial;
-	user-select: none;
 }
 
 a {
@@ -183,11 +182,10 @@ a {
 	left: 0;
 	right: 0;
 	top: 0;
-	margin: 0 auto;
-	width: 10000px;
-	height: 10000px;
+	width: 100vw;
+	height: 100vh;
 	overflow: hidden;
-	background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 300;
 }
 
@@ -219,11 +217,13 @@ a {
 }
 
 .top .signin-panel .signin-form {
-	padding: 10px 20px 0;
+	position: relative;
+	padding: 0 20px 0;
 }
 
 .top .signin-panel .signin-form input {
-	margin: 10px auto;
+	display: block;
+	margin: 20px auto;
 	padding: 13px 15px;
 	width: 328px;
 	height: 22px;
@@ -235,29 +235,39 @@ a {
 	transition: border-color 0.3s;
 }
 
-.top .signin-panel .signin-form .pinword {
-	width: 206px;
+.top .signin-panel .signin-form .pinrange {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 0;
+	-webkit-appearance: none;
+	width: 358px;
+	height: 48px;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 194;
 }
 
-.top .signin-panel .signin-form .get-pinword {
-	margin-top: 10px;
-	float: right;
-	width: 100px;
-	height: 48px;
-	border: #ff6700 solid 1px;
-	background: #fff;
-	transition: background-color 0.3s;
+.top .signin-panel .signin-form .pinrange::-webkit-slider-thumb {
+	position: relative;
+	-webkit-appearance: none;
+	width: 50px;
+	height: 50px;
+	background: #e0e0e0;
+	box-shadow: #ff6700 -100vw 0 0 100vw;
+	z-index: 195;
 }
 
-.top .signin-panel .signin-form .get-pinword-btn {
-	display: block;
-	width: 100px;
-	height: 48px;
-	line-height: 48px;
-	font-size: 14px;
-	color: #ff6700;
-	text-align: center;
-	transition: color 0.3s;
+.top .signin-panel .signin-form .hint-before {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 140px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	z-index: 190;
+	color: #4a4a4a;
 }
 
 .top .signin-panel .signin-submit {
@@ -372,9 +382,8 @@ a {
 	left: 0;
 	right: 0;
 	top: 0;
-	margin: 0 auto;
-	width: 10000px;
-	height: 10000px;
+	width: 100vw;
+	height: 100vh;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0);
 	z-index: 200;
@@ -523,7 +532,7 @@ a {
 .top .user .fake-signin-back .cancel-signin-btn:checked+.signin-back {
 	background: rgba(0, 0, 0, 0);
 	visibility: hidden;
-	transition: background-color 0.3s, visibility 1ms 290ms;
+	transition: background-color 0.3s, visibility 1ms 250ms;
 }
 
 .top .user .fake-signin-back .cancel-signin-btn-label:hover {
@@ -571,7 +580,7 @@ a {
 .top .user .fake-login-back .cancel-login-btn:checked+.login-back {
 	background: rgba(0, 0, 0, 0);
 	visibility: hidden;
-	transition: background-color 0.3s, visibility 1ms 290ms;
+	transition: background-color 0.3s, visibility 1ms 250ms;
 }
 
 .top .user .fake-login-back .cancel-login-btn-label:hover {
@@ -665,6 +674,35 @@ a {
 	height: 0;
 	background: #ff6700;
 	transition: height 0.2s;
+}
+
+.next .all-commodity {
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 409px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.15);
+	transition: width 0.3s;
+}
+
+.next .all-commodity .commodity-list {
+	margin: 11px 0;
+}
+
+.next .all-commodity .commodity-list .commodity-item .commodity-item-title {
+	display: block;
+	padding-left: 30px;
+	color: #fff;
+	height: 43px;
+	line-height: 43px;
+}
+
+.next .all-commodity .commodity-list .commodity-item .right-angle {
+	position: absolute;
+	right: 30px;
+	color: #e0e0e0;
+	font-weight: bolder;
 }
 
 .next .nav-item-menu {
@@ -799,6 +837,14 @@ a {
 	height: 4px;
 }
 
+.next .all-commodity-btn:hover .all-commodity {
+	width: 234px;
+}
+
+.next .all-commodity .commodity-item:hover {
+	background: #ff6700;
+}
+
 .next .nav-item:hover .nav-item-menu {
 	height: 233px;
 }
@@ -924,7 +970,7 @@ a {
 }
 
 .mainpage {
-	padding-top: 4px;
+	padding: 4px 0 8px 0;
 	width: 100%;
 	background: #f5f5f5;
 }
@@ -1144,11 +1190,243 @@ a {
 	height: 120px;
 }
 
+/* .friends {
+	width: 100%;
+	background: #f5f5f5;
+}
+
+.friends .title {
+	margin-bottom: 25px;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	color: #666;
+	line-height: 106px;
+}
+
+.friends .container {
+	position: relative;
+	margin: 0 auto;
+	width: 1226px;
+	overflow: hidden;
+	background: #fff;
+}
+
+.friends .friends-list {
+	margin: 0 auto;
+	padding: 74px 0 0 74px;
+	width: 1156px;
+}
+
+.friends .friends-item {
+	float: left;
+	margin-right: 74px;
+	margin-bottom: 22px;
+	width: 214px;
+	height: 214px;
+	border-radius: 50%;
+}
+
+.friends .friends-item .friends-item-btn {
+	position: relative;
+	display: block;
+	width: 214px;
+	height: 214px;
+	border-radius: 50%;
+	color: #000000;
+	overflow: hidden;
+	border-width: 4px;
+	border-style: solid;
+	box-sizing: border-box;
+}
+
+.friends .friends-item .meizu {
+	background: url(../images/icon/meizu.png) 50% 50% no-repeat;
+	background-size: 150px;
+	border-color: #21bbef;
+}
+
+.friends .friends-item .meizu .background-hover {
+	background-color: #21bbef;
+	background-image: url(../images/icon/meizu-hover.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 150px;
+}
+
+.friends .oppo:hover .background-hover {
+	width: 210px;
+	height: 210px;
+}
+
+.friends .friends-item .oppo {
+	background: url(../images/icon/oppo.png) 50% 50% no-repeat;
+	background-size: 150px;
+	border-color: #006b33;
+}
+
+.friends .friends-item .oppo .background-hover {
+	background-color: #006b33;
+	background-image: url(../images/icon/oppo-hover.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 150px;
+}
+
+.friends .friends-item .vivo {
+	background: url(../images/icon/vivo.png) 50% 50% no-repeat;
+	background-size: 150px;
+	border-color: #0072b8;
+}
+
+
+.friends .friends-item .samsung {
+	background: url(../images/icon/samsung.png) 50% 50% no-repeat;
+	background-size: 150px;
+	border-color: #000;
+}
+
+.friends .friends-item .background-hover {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	transition: all 0.3s linear;
+}
+
+.friends .friends-item .friends-item-btn img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+} */
+
+.foot-links {
+	width: 100%;
+	background: #fff;
+}
+
+.foot-links .container {
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 1226px;
+}
+
+.foot-links .links-list {
+	float: left;
+	width: 160px;
+	height: 112px;
+}
+
+.foot-links .links-list .links-title {
+	margin: -1px 0 26px;
+	line-height: 1.25;
+	font-size: 14px;
+	color: #424242;
+}
+
+.foot-links .links-list dd {
+	margin: 10px 0 0;
+	font-size: 12px;
+}
+
+.foot-links .links-list a {
+	color: #757575;
+}
+
+.foot-links .foot-helper {
+	float: right;
+	width: 251px;
+	height: 112px;
+	border-left: #e0e0e0 solid 1px;
+	text-align: center;
+	color: #616161;
+}
+
+.foot-links .foot-helper .tel-number {
+	margin-bottom: 5px;
+	color: #ff6700;
+	font-size: 22px;
+	line-height: 1;
+}
+
+.foot-links .foot-helper .helper-description {
+	margin-bottom: 16px;
+	font-size: 12px;
+}
+
+.foot-links .foot-helper .helper-btn {
+	display: inline-block;
+	margin: 0 auto;
+	width: 118px;
+	height: 28px;
+	font-size: 12px;
+	color: #ff6700;
+	border: #ff6700 solid 1px;
+	transition: all 0.4s;
+}
+
+.foot-links .foot-helper .helper-btn .helper-img {
+	float: left;
+	margin-left: 23px;
+	margin-top: 5px;
+	width: 18px;
+	height: 18px;
+	background: url(../images/helper-img.png) 50% 50% no-repeat;
+	transition: all 0.4s;
+}
+
+.foot-links .foot-helper .helper-btn .helper-text {
+	float: right;
+	margin-right: 23px;
+	width: 50px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.foot-links .links-list a:hover {
+	color: #ff6700;
+}
+
+.foot-links .foot-helper .helper-btn:hover {
+	background: #ff6700;
+	color: #fff;
+}
+
+.foot-links .foot-helper .helper-btn:hover .helper-img {
+	background: url(../images/helper-img-hover.png) 50% 50% no-repeat;
+}
+
+.copyright {
+	width: 100%;
+	background: #333;
+}
+
+.copyright .container {
+	margin: 0 auto;
+	width: 1226px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.copyright .copyright-text {
+	margin: 0 auto;
+	color: #b0b0b0;
+	font-size: 14px;
+}
+
+.copyright .copyright-text:hover{
+	color: #fff;
+}
 
 .backtoptop {
 	position: fixed;
-	right: 40px;
-	bottom: 40px;
+	right: 50px;
+	bottom: 90px;
 	width: 45px;
 	height: 60px;
 	background: #fff;
